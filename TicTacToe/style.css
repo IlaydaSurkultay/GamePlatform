@@ -1,0 +1,96 @@
+.case {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: solid 2px black;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#playGround {
+    margin: auto;
+    align-items: center;
+    display: grid;
+    width: 450px;
+    height: 450px;
+    background-color: black;
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 15px solid blue;
+    box-sizing: border-box;
+}
+
+.cross {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.cross:before, .cross::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.cross:before{
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+.cross:after{
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+
+#introduction {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+#gameTurn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+
+#replay {
+   margin: auto;
+}
+
+
+
+.design {
+    animation: blinker 5s linear infinite;
+    background-color: rgb(101, 143, 15);
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
