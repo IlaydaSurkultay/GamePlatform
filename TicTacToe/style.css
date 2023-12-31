@@ -94,3 +94,23 @@
       opacity: 0;
     }
   }
+
+
+  #otherGameBtn {
+    display: none;
+    margin: 20px auto 0; /* Added margin for better positioning */
+    text-align: center;
+    padding: 10px 20px; /* Adjust padding to provide space around the text */
+    font-family: 'Arial', sans-serif; /* Chosen font family */
+    font-size: 16px; /* Adjust the font size as per your preference */
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3; /* Chosen background color */
+    color: white; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#otherGameBtn:hover {
+    background-color: #0f7ae5; /* Darker color on hover */
+}

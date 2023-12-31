@@ -2,8 +2,8 @@ var questions = [];
 var answers = [];
 var index = 0;
 var turn = 0;
-var scores = {}; // Oyuncuların skorlarını tutacak obje
-var players = ['', '']; // Oyuncu isimlerini tutacak dizi
+var scores = {}; 
+var players = ['', '']; 
 
 var quiz = [];
 
@@ -11,7 +11,6 @@ function startGame() {
     players[0] = document.getElementById("player1").value;
     players[1] = document.getElementById("player2").value;
 
-    // Her oyuncu için başlangıç skoru 0 olarak ayarlanıyor
     scores[players[0]] = 0;
     scores[players[1]] = 0;
 
@@ -24,7 +23,9 @@ function startGame() {
 }
 
 function restartGame() {
-    // Reset the necessary game variables
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
     questions = [];
     answers = [];
     index = 0;
@@ -39,25 +40,38 @@ function restartGame() {
     generateQuestions();
     displayQuestion();
 
+<<<<<<< Updated upstream
     // Clear the summary and result sections
     document.getElementById("final").innerHTML = "";
-    document.getElementById("result").innerHTML = ""; // Clear the Result section
-    document.getElementById("scoreboard").innerHTML = ""; // Clear the Scores section
+    document.getElementById("result").innerHTML = ""; 
+    document.getElementById("scoreboard").innerHTML = ""; 
 
     // Hide scores and winner sections after restarting
     document.getElementById("scoreboard").style.display = "none";
     document.getElementById("result").style.display = "none";
 
     // Check if the game is over after resetting
+=======
+    document.getElementById("final").innerHTML = "";
+    document.getElementById("result").innerHTML = ""; 
+    document.getElementById("scoreboard").innerHTML = ""; 
+
+    document.getElementById("scoreboard").style.display = "none";
+    document.getElementById("result").style.display = "none";
+
+>>>>>>> Stashed changes
     if (index === questions.length) {
         endGame();
     }
 }
 
 
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
 function displayPlayers() {
     document.getElementById("playerNames").innerHTML = "Player 1: " + players[0] + "<br>Player 2: " + players[1];
 }
@@ -87,7 +101,7 @@ function checkAnswer() {
     var quizQuestion = { question: questions[index], answer: answers[index], studentAnswer: studentSol };
     quiz[index] = quizQuestion;
 
-    var currentPlayer = index % 2; // Hangi oyuncunun sırası olduğunu belirler
+    var currentPlayer = index % 2; 
     var currentPlayerName = players[currentPlayer];
 
     if (studentSol == answers[index]) {
@@ -119,7 +133,10 @@ function endGame() {
     document.getElementById("final").innerHTML = summary();
     document.getElementById("scoreboard").innerHTML = showScores();
 
+<<<<<<< Updated upstream
     // Show updated game result for the new game
+=======
+>>>>>>> Stashed changes
     document.getElementById("result").innerHTML = showResult();
 }
 
@@ -163,5 +180,14 @@ function showResult() {
         return "<h2>Result</h2>" + winners[0] + " wins with " + scores[winners[0]] + " correct answers!";
     } else {
         return "<h2>Result</h2>It's a tie!";
+<<<<<<< Updated upstream
    }
 }
+=======
+    }
+}
+
+document.getElementById('otherGameBtn').addEventListener('click', function () {
+    window.location.href = 'http://127.0.0.1:8080/GameCatalog/main.html'; 
+});
+>>>>>>> Stashed changes

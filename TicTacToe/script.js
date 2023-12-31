@@ -20,7 +20,8 @@ function playGame() {
     createCellButton()
     introduction.textContent = "X: " + first.value + " O: " + second.value;
     gameTurn.textContent = first.value + "'s Turn"
-
+    var otherGameBtn = document.getElementById("otherGameBtn");
+    otherGameBtn.style.display = "block";
 
 }
 
@@ -167,3 +168,7 @@ function winningDesign(part) {
     caseB.classList.add("design");
     caseC.classList.add("design");
 }
+
+document.getElementById('otherGameBtn').addEventListener('click', function () {
+    window.location.href = 'http://127.0.0.1:8080/GameCatalog/main.html'; 
+});
