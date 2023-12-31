@@ -23,6 +23,41 @@ function startGame() {
     displayQuestion();
 }
 
+function restartGame() {
+    // Reset the necessary game variables
+    questions = [];
+    answers = [];
+    index = 0;
+    turn = 0;
+    quiz = [];
+    scores = {};
+
+    scores[players[0]] = 0;
+    scores[players[1]] = 0;
+
+    displayPlayers();
+    generateQuestions();
+    displayQuestion();
+
+    // Clear the summary and result sections
+    document.getElementById("final").innerHTML = "";
+    document.getElementById("result").innerHTML = ""; // Clear the Result section
+    document.getElementById("scoreboard").innerHTML = ""; // Clear the Scores section
+
+    // Hide scores and winner sections after restarting
+    document.getElementById("scoreboard").style.display = "none";
+    document.getElementById("result").style.display = "none";
+
+    // Check if the game is over after resetting
+    if (index === questions.length) {
+        endGame();
+    }
+}
+
+
+
+
+
 function displayPlayers() {
     document.getElementById("playerNames").innerHTML = "Player 1: " + players[0] + "<br>Player 2: " + players[1];
 }
@@ -84,7 +119,7 @@ function endGame() {
     document.getElementById("final").innerHTML = summary();
     document.getElementById("scoreboard").innerHTML = showScores();
 
-    // Tüm sorular tamamlandıktan sonra Result kısmını göster
+    // Show updated game result for the new game
     document.getElementById("result").innerHTML = showResult();
 }
 
@@ -128,5 +163,5 @@ function showResult() {
         return "<h2>Result</h2>" + winners[0] + " wins with " + scores[winners[0]] + " correct answers!";
     } else {
         return "<h2>Result</h2>It's a tie!";
-    }
+   }
 }
