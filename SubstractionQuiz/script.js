@@ -23,9 +23,6 @@ function startGame() {
 }
 
 function restartGame() {
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
     questions = [];
     answers = [];
     index = 0;
@@ -40,18 +37,6 @@ function restartGame() {
     generateQuestions();
     displayQuestion();
 
-<<<<<<< Updated upstream
-    // Clear the summary and result sections
-    document.getElementById("final").innerHTML = "";
-    document.getElementById("result").innerHTML = ""; 
-    document.getElementById("scoreboard").innerHTML = ""; 
-
-    // Hide scores and winner sections after restarting
-    document.getElementById("scoreboard").style.display = "none";
-    document.getElementById("result").style.display = "none";
-
-    // Check if the game is over after resetting
-=======
     document.getElementById("final").innerHTML = "";
     document.getElementById("result").innerHTML = ""; 
     document.getElementById("scoreboard").innerHTML = ""; 
@@ -59,19 +44,12 @@ function restartGame() {
     document.getElementById("scoreboard").style.display = "none";
     document.getElementById("result").style.display = "none";
 
->>>>>>> Stashed changes
     if (index === questions.length) {
         endGame();
     }
 }
 
 
-<<<<<<< Updated upstream
-
-
-
-=======
->>>>>>> Stashed changes
 function displayPlayers() {
     document.getElementById("playerNames").innerHTML = "Player 1: " + players[0] + "<br>Player 2: " + players[1];
 }
@@ -133,10 +111,6 @@ function endGame() {
     document.getElementById("final").innerHTML = summary();
     document.getElementById("scoreboard").innerHTML = showScores();
 
-<<<<<<< Updated upstream
-    // Show updated game result for the new game
-=======
->>>>>>> Stashed changes
     document.getElementById("result").innerHTML = showResult();
 }
 
@@ -180,14 +154,9 @@ function showResult() {
         return "<h2>Result</h2>" + winners[0] + " wins with " + scores[winners[0]] + " correct answers!";
     } else {
         return "<h2>Result</h2>It's a tie!";
-<<<<<<< Updated upstream
-   }
-}
-=======
     }
 }
 
 document.getElementById('otherGameBtn').addEventListener('click', function () {
     window.location.href = 'http://127.0.0.1:8080/GameCatalog/main.html'; 
 });
->>>>>>> Stashed changes
