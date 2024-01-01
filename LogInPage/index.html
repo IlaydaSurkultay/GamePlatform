@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <!-- Login Section -->
+<div id="loginSection">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="event.preventDefault(); login();">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="userType">User Type:</label>
+        <input type="text" id="userType" name="userType" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<!-- Sign-Up Section -->
+<div id="signupSection">
+    <h2>Sign Up</h2>
+    <form id="signupForm" onsubmit="event.preventDefault(); signup();">
+        <label for="newUsername">New Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required><br><br>
+        <label for="newUserType">New User Type:</label>
+        <input type="text" id="newUserType" name="newUserType" required><br><br>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+</body>
+</html>
