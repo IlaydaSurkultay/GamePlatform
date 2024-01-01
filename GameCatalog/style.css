@@ -12,40 +12,39 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 50px; /
+    margin-bottom: 50px;
 }
 
 h1 {
     font-size: 48px;
     color: #333;
     text-transform: uppercase;
-    margin-top: 20px; /
+    margin-top: 20px;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /
+    flex-direction: column;
 }
 
-.oyunlar {
+.games {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    gap: 30px; 
-    width: 80%; 
-    margin-top: 20px; 
+    gap: 40px; /* Increased gap between game images */
+    width: 80%;
+    margin-top: 20px;
 }
 
 img {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    width: 200px;
+    height: 200px;
+    border-radius: 10%; /* Slightly reduced border-radius for a different look */
+    margin-bottom: 20px; /* Increased space between game images and game titles */
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -56,14 +55,13 @@ a {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
-    width: 200px; 
+    width: 200px;
     text-align: center;
 }
 
 a:hover {
     transform: scale(1.1);
 }
-
 
 h2 {
     font-size: 24px;
