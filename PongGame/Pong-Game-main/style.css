@@ -40,15 +40,14 @@ canvas {
     color: #777;
 }
 
-/* Custom styles for paddles and ball */
 .player1 {
-    background: linear-gradient(to right, #3498db, #2980b9); /* Gradient for Player 1 */
-    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(to right, #3498db, #2980b9); 
+    border-radius: 10px; 
 }
 
 .player2 {
-    background: linear-gradient(to left, #e74c3c, #c0392b); /* Gradient for Player 2 */
-    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(to left, #e74c3c, #c0392b); 
+    border-radius: 10px; 
 }
 
 .ball {
@@ -94,3 +93,21 @@ canvas {
     background-color: #2980b9;
 }
 
+.how-to-play {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 300px; 
+    padding: 15px; 
+}
+
+.how-to-play-text {
+    background-color: #f9f9f9;
+    padding: 15px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 1.6; 
+    text-align: justify;
+}

@@ -98,19 +98,40 @@
 
   #otherGameBtn {
     display: none;
-    margin: 20px auto 0; /* Added margin for better positioning */
+    margin: 20px auto 0; 
     text-align: center;
-    padding: 10px 20px; /* Adjust padding to provide space around the text */
-    font-family: 'Arial', sans-serif; /* Chosen font family */
-    font-size: 16px; /* Adjust the font size as per your preference */
+    padding: 10px 20px; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
     border: none;
     border-radius: 5px;
-    background-color: #2196F3; /* Chosen background color */
-    color: white; /* Text color */
+    background-color: #2196F3; 
+    color: white; 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #otherGameBtn:hover {
-    background-color: #0f7ae5; /* Darker color on hover */
+    background-color: #0f7ae5; 
 }
+
+
+.how-to-play {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 300px; 
+    padding: 15px; 
+}
+
+.how-to-play-text {
+    background-color: #f9f9f9;
+    padding: 15px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 1.6; 
+    text-align: justify;
+}
+

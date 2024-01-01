@@ -149,3 +149,23 @@ h2 {
 #otherGameBtn:hover {
     background-color: #219a52;
 }
+
+
+.how-to-play {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 300px; 
+    padding: 15px; 
+}
+
+.how-to-play-text {
+    background-color: #f9f9f9;
+    padding: 15px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 1.6; 
+    text-align: justify;
+}

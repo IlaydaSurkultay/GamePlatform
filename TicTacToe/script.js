@@ -22,7 +22,7 @@ function playGame() {
     gameTurn.textContent = first.value + "'s Turn"
     var otherGameBtn = document.getElementById("otherGameBtn");
     otherGameBtn.style.display = "block";
-
+    document.getElementById('gameRules').style.display = 'block';
 }
 
 function click(e) {
