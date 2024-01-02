@@ -7,9 +7,9 @@
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-    <!-- Login Section -->
-<div id="loginSection">
-    <h2>Login</h2>
+
+<div class="login-container">
+    <h1>Login</h1>
     <form id="loginForm" onsubmit="event.preventDefault(); login();">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
@@ -19,9 +19,8 @@
     </form>
 </div>
 
-<!-- Sign-Up Section -->
-<div id="signupSection">
-    <h2>Sign Up</h2>
+<div class="login-container">
+    <h1>Sign Up</h1>
     <form id="signupForm" onsubmit="event.preventDefault(); signup();">
         <label for="newUsername">New Username:</label>
         <input type="text" id="newUsername" name="newUsername" required><br><br>
